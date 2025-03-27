@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            curiousJed
+        </title>
+
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+
+    <body> 
+        <div class="main">
+            <div class="center-top">
+               <p class="FreedomWall-tag">JedsFreedomWall</p>
+            </div>
+
+            <div class="form-container">
+                <form action="/submit" method="POST">
+                    <input type="text" name="userTag" placeholder="Kaw na bahala if lalagay mo name mo or fake name kaw bahal idc" class="username-input">
+                    <textarea name="message" rows="10" cols="80" placeholder="Sabihin mo na kung crush mo ko or may galit ka sakin" class="message-input"></textarea>
+                    <div class="button-div">
+                        <button class="button-post">Post mo na yan</button>  
+                    </div>
+                </form>    
+            </div>
+
+            <div class="error-div" id="error-messages"> </div>
+        </div>
+
+        <hr style="width: 50%; margin-top: 30px;">
+
+        <div class="post-divs">
+            {{#if posts.length}}
+                {{#each posts}}
+                    <div class="post-card">
+                        <p class="post-user">{{this.User}}</p>
+                        <p class="message">{{this.Post}}</p>
+                        <p class="date">{{this.Date}}</p>
+                    </div>
+                {{/each}}
+                {{else}}
+                    <p class="message">Post na kayo wag kayo mahiya i wont know ur identity unless u put it duhhh</p>
+            {{/if}}
+        </div>
+    </body>
+
+    <script src="/js/actions.js"></script>
+
+</html>

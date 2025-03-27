@@ -1,0 +1,82 @@
+.center-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.FreedomWall-tag{
+    font-size: 50px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* Vertical centering */
+    align-items: center;       /* Horizontal centering */
+}
+
+.username-input{
+    padding: 10px;
+    height: 50%;
+    border-radius: 30px;
+}
+
+.button-post{
+    width: 20%;
+    border-radius: 20px;
+}
+
+.button-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-divs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.post-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.error-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-user{
+    font-size: 20px;
+}
+
+.date{
+    font-weight: bold;
+}
+
+#error-messages {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+textarea {
+    resize: none;
+    border-radius: 13px;
+}
