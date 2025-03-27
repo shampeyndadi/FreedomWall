@@ -14,12 +14,10 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-mongoose.connect('mongodb://127.0.0.1:27017/SimpleBloggingApp', {
+mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
-  .then(() => console.log("✅ Connected to local MongoDB"))
-  .catch(err => console.error("❌ Connection error:", err));
 
 
   app.post('/delete-all', async (req, res) => {
